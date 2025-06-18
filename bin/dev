@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+exec "./bin/rails", "server", *ARGV
+exec "bundle exec sidekiq"
+

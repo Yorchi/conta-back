@@ -1,0 +1,12 @@
+<h1>Hola,</h1>
+<p>
+  Estas viendo la lista de los 10 mejores dias que tuvieron ventas en la mañana, considenrando ventas de 6am a 12pm
+</p>
+
+<% @days.each do |day| %>
+  <p>
+    <b><%= day['day'] %>:</b> $<%= day['total_sales'].to_f.round(2) %>
+  </p>
+<% end %>
+
+<p>Gracias.</p>
